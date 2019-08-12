@@ -1,5 +1,4 @@
-<h2> <%= @artist.name %> </h2>
-
+<%= @artist.name %> 
 <h2>Songs: </h2>
 <% @artist.songs.each do |song| %>
 <h3><a href="/songs/<%= song.slug %>"><%= song.name %></a> </h3>
