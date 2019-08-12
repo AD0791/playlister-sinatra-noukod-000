@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   get '/artists' do
-    params
+    binding.pry
     @artists = Artist.all
     erb :'artists/index'
   end
